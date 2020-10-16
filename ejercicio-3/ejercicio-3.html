@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ejercicio-3.js"></script>
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>ejercicio 3: concatnar array con diferentes tamaños</h1>
+    
+    <p>introduce los primeros enteros separados por comas</p>
+    <input type="text" id="Ejemplo1">
+    <select id="Selctor1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5" selected ="">5</option>
+        <option value="6">6</option>
+    </select>
+    <input type="button" value="ejemplo 1" >
+    <p>introduce los segundos enteros separodos por comas</p>
+    <input type="text" id="Ejemplo2">
+    <select id="Selector2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected = "">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    <input type="text" id="" onclick="document.getElementById('Ejemplo1').value=document.getElementById('Selector2').value">
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--
+    <h1>Ejercicio simple 3: Concatenar arrays diferentes tamaños</h1>
+
+<p>Introduce los primeros enteros separados por comas</p>
+<input type="text" id="ejemplo1">
+<select id="select1">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5" selected="">5</option>
+	<option value="6">6</option>
+</select>
+<input type="button" value="Ejemplo1" onclick="ejemplo1()">
+
+<p>Introduce los segundos enteros separados por comas</p>
+<input type="text" id="ejemplo2">
+<select id="select2">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3" selected="">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+</select>
+<input type="button" value="Ejemplo2" onclick="document.getElementById('ejemplo2').value=ejemplo(document.getElementById('select2').value)">
+<p><input type="button" value="Concatenar" onclick="concatenar()"></p>
+<input type="button" value="Reiniciar" onclick="Reiniciar()">
+
+<p id="resultado"></p>
+
+<script>
+var array1=[], array2=[];
+
+function ejemplo1(){
+
+	var num=document.getElementById("select1").value;
+	for(i=0;i<num;i++)
+	{
+		array1.push(parseInt(Math.random()*100));
+	}
+	document.getElementById("ejemplo1").value=array1;
+}
+//Esta funcion es mejorada con respecto a la anterior, para así reduccir el número de funciones ejemplo
+
+function ejemplo(x){
+
+	for(i=0;i<x;i++)
+	{
+		array2.push(parseInt(Math.random()*100));
+	}
+	return array2;
+}
+
+var aux=[];
+function concatenar()
+{
+	array1=document.getElementById("ejemplo1").value.split(/,/);
+	array2=document.getElementById("ejemplo2").value.split(/,/);
+	if (array1.length>array2.length)
+	{
+		for(i=0;i<array2.length;i++){
+
+			aux.push(array1[i]);
+			aux.push(array2[i]);
+
+	}
+	for(;i<array1.length;i++)
+	{
+		aux.push(array1[i]);
+	}
+	}
+	else
+	{
+		for(i=0;i<array1.length;i++){
+
+			aux.push(array1[i]);
+			aux.push(array2[i]);
+
+		}
+		
+		for(;i<array2.length;i++)
+		{
+			aux.push(array2[i]);
+		}
+	}
+
+
+	document.getElementById("resultado").innerHTML=aux;
+
+
+}
+
+function Reiniciar(){
+	window.location.href = 'ejercicio3.html'; 
+	//location.reload(); //recargar la página web
+}
+
+</script>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+variable glogbal.
+reutilizar los ID "ejemplo 1" y "ejemplo 2".
+concatenar agregando nuevos arrays.
+mostrar en el html los elemntos concatenados.
